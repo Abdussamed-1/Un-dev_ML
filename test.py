@@ -80,8 +80,8 @@ class GeminiLanguageModel:
         # Configure the Gemini API
         genai.configure(api_key=self.api_key)
 
-        # Use Gemini 1.5 Pro as the default model
-        self.model_name = "gemini-1.5-pro"
+        # Use Gemini 2.0 Pro Experimental as default
+        self.model_name = "gemini-2.0-pro-exp-02-05"
         self.model = genai.GenerativeModel(self.model_name)
 
         # Default generation parameters
